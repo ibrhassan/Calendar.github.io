@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: url(../Assets/thomas-griesbeck-BS-Uxe8wU5Y-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.calender_container {
+  background: url(../Assets/therealcontainer.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  width: 730px;
+  height: 800px;
+  margin-left: 30%;
+  margin-right: 20%;
+  margin-top: 40px;
+  min-height: 80vh;
+}
+.calender_container #prevMonth, .calender_container #nextMonth {
+  position: absolute;
+  bottom: 0;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 200px;
+  height: 100vh;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.calender_container #prevMonth {
+  left: 0;
+}
+
+.calender_container #nextMonth {
+  right: 0;
+}
+
+.calender_container #prevMonth:hover, .calender_container #nextMonth:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.calender_container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  position: absolute;
+  top: 10%;
+}
+.calender_container .header .Month {
+  font-size: 60px;
+  font-weight: 700;
+}
+.calender_container .header .Year {
+  font-size: 40px;
+  font-weight: 500;
+  margin-left: 5px;
+  margin-top: -15px;
+  color: rgb(255, 255, 255);
+}
+.calender_container #days {
+  position: absolute;
+  top: 47%;
+  padding: 40px 50px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px black;
+  width: auto;
+  opacity: 0.95;
+  background-color: #1e1e1eeb;
+}
+.calender_container #days thead th {
+  padding: 13px;
+  font-size: 24px;
+}
+.calender_container #days tbody td {
+  padding: 13px;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+.calender_container #days tbody td:hover {
+  border-radius: 6%;
+  background-color: rgba(255, 255, 255, 0.2);;
+  color: rgb(255, 255, 255);
+}
+.calender_container #days tbody .today {
+  font-weight: 800;
+  color: rgb(255, 80, 80);
+  border-radius: 20%;
+}
+.calender_container #days tbody .today:hover {
+  color: rgb(255, 0, 0);
+}
+
+.prev-month, .next-month {
+  color: rgb(137, 137, 137);
+}
+/*# sourceMappingURL=style.css.map */
